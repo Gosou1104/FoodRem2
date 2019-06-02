@@ -118,15 +118,10 @@ def main(k, input_path, output_path, temp_path):
         fp.write(" ".join(output_list) + "\n")
     fp.close()
     jsObj = json.dumps(dic,ensure_ascii=False)
-<<<<<<< HEAD
     DIR="/Users/gosou/Desktop/FoodRem/action_jsonFile/"
     conter = len([name for name in os.listdir(DIR) if os.path.isfile(os.path.join(DIR, name))])#查询有多少个文件
     jsonPath = "/Users/gosou/Desktop/FoodRem/action_jsonFile/rapide_"+str(conter)+".json"
-=======
-    DIR="/Users/gosou/Desktop/1/action_jsonFile/"
-    conter = len([name for name in os.listdir(DIR) if os.path.isfile(os.path.join(DIR, name))])#查询有多少个文件
-    jsonPath = "/Users/gosou/Desktop/1/action_jsonFile/rapide_"+str(conter)+".json"
->>>>>>> bfee379a937bdd9bbce81ceb9bad4e9392154274
+
     fileObject = open(jsonPath,'w')
 
     fileObject.write(jsObj)
@@ -137,13 +132,13 @@ if __name__ == "__main__":
     argvs = sys.argv
     argc = len(argvs)
     if argc != 4:
-        print '以下の書式で実行してください'
-        print 'python replace_sample.py [この値以下の出現回数の単語をUNKに置換] [入力元のパス] [出力先のパス]'
+        print ('以下の書式で実行してください')
+        print ('python replace_sample.py [この値以下の出現回数の単語をUNKに置換] [入力元のパス] [出力先のパス]')
         sys.exit()
     k = argvs[1]
     input_path = argvs[2]
     output_path = argvs[3]
     temp_path = input_path + "_temp"
-    print '"{0}"に一時的なファイルが生成されますが，処理終了後，削除していただいて構いません．'.format(os.path.abspath(temp_path))
+    print ('"{0}"に一時的なファイルが生成されますが，処理終了後，削除していただいて構いません．'.format(os.path.abspath(temp_path)))
     main(k, input_path, output_path, temp_path)
-    print 'DONE!!'
+    print ('DONE!!')

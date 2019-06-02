@@ -115,12 +115,12 @@ if __name__ == '__main__':
     argvs = sys.argv
     argc = len(argvs)
     if argc != 4:
-        print '以下の書式で実行してください'
-        print 'python finalizer_sample.py [手順2で出力されたファイルのパス] [手順4で出力されたファイルのパス] [出力先のパス]'
+        print('以下の書式で実行してください')
+        print('python finalizer_sample.py [手順2で出力されたファイルのパス] [手順4で出力されたファイルのパス] [出力先のパス]')
         sys.exit()
     input_path1 = argvs[1]
     input_path2 = argvs[2]
     output_path = argvs[3]
     f = Finalizer()
     f.main(input_path1, input_path2, output_path)
-    print 'DONE!!'
+    print('DONE!!')

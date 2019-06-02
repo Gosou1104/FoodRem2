@@ -1,22 +1,18 @@
 #encoding:utf-8
 import csv
 import os
-import numpy as np
+#import numpy as np
 import unicodedata
 from normalizer_sample import Normalizer
 import preparation_for_ner_sample_ori
 from finalizer_sample import Finalizer
 import remove_sample
-import replace_sample
+import replace_sample_food
 import time
 import shutil
 
 
 
-
-
-
-# test
 
 char_path = "/Users/gosou/Desktop/FoodRem/jisx0208utf8.txt"
 temp_input_path = "/Users/gosou/Desktop/FoodRem/temp_input.txt"
@@ -43,7 +39,7 @@ def del_file(path):#删除文件
 
 if __name__ == '__main__':
 
-    csv_file = csv.reader(open('new.csv','r'))
+    csv_file = csv.reader(open('/Users/gosou/Desktop/FoodRem/test.csv','r'))
     count=0
     counter =0
     string_list=[]
@@ -62,45 +58,28 @@ if __name__ == '__main__':
         fp.close()
         a = Normalizer(char_path)#1
         a.main(temp_input_path,temp_output_path)
-        os.system("kytea -model 2014-10-23.kbm < "+temp_output_path +"> "+temp_output_path_2)#2
+        os.system("kytea -model /Users/gosou/Desktop/FoodRem/2014-10-23.kbm < "+temp_output_path +"> "+temp_output_path_2)#2
         
-        os.chdir("bccwjconv")#2.5
-        #os.system("pwd")
+        os.chdir("/Users/gosou/Desktop/FoodRem/bccwjconv")#2.5
 
         os.system("perl addbase.perl <"+ temp_output_path_2+" > "+temp_output_path_25)
         os.chdir("/Users/gosou/Desktop/FoodRem/")
 
-        #os.system("perl addbase.perl <"+ temp_output_path_2+" > "+temp_output_path_25)
-        os.chdir("/Users/gosou/Desktop/1/")
-        #os.system("pwd")
-
         preparation_for_ner_sample_ori.main(temp_output_path_2,temp_output_path_3)#3
-        os.system("kytea -model recipe416.knm -out conf -nows -tagmax 0 -unktag /UNK "+temp_output_path_3 +"> temp.Ciob2 ")#4
+        os.system("kytea -model /Users/gosou/Desktop/FoodRem/recipe416.knm -out conf -nows -tagmax 0 -unktag /UNK "+temp_output_path_3 +"> temp.Ciob2 ")#4
         os.system("perl /Users/gosou/Desktop/FoodRem/bin/NESearch.pl temp.Ciob2 "+temp_output_path_4)#4
-
-        os.system("perl /Users/gosou/Desktop/1/bin/NESearch.pl temp.Ciob2 "+temp_output_path_4)#4
 
         b = Finalizer()
         b.main(temp_output_path_25,temp_output_path_4,temp_output_path_5)#5
 
         remove_sample.main(temp_output_path_5,temp_output_path_6)#6
 
-        #os.system("python /Users/gosou/Desktop/FoodRem/remove_sample.py "+temp_output_path_5+" "+temp_output_path_6)
 
-        os.system("python /Users/gosou/Desktop/FoodRem/replace_sample_food.py 0 "+temp_output_path_6+" "+temp_output_path_7)#7
+        os.system("python /Users/gosou/Desktop/FoodRem/remfood_real/replace_sample_food.py 0 "+temp_output_path_6+" "+temp_output_path_7)#7
         
-        #path_temp_8="/Users/gosou/Desktop/FoodRem/action_txtFile/temp_output_8"+str(counter)+".txt"
         path_temp_9="/Users/gosou/Desktop/FoodRem/food_txtFile/temp_output_9"+str(counter)+".txt"
 
-        #os.system("python /Users/gosou/Desktop/1/remove_sample.py "+temp_output_path_5+" "+temp_output_path_6)
 
-        os.system("python /Users/gosou/Desktop/1/replace_sample_food.py 0 "+temp_output_path_6+" "+temp_output_path_7)#7
-        
-        #path_temp_8="/Users/gosou/Desktop/1/action_txtFile/temp_output_8"+str(counter)+".txt"
-        path_temp_9="/Users/gosou/Desktop/1/food_txtFile/temp_output_9"+str(counter)+".txt"
-
-
-        #os.system("cat ./temp_output_7.txt | tr ' ' '\n' | grep '/Ac$' | sort | uniq > "+path_temp_8)#8
         os.system("cat ./temp_output_7.txt | tr ' ' '\n' | grep '/F$' | sort | uniq > "+path_temp_9)#输出food文件夹
 
 
@@ -111,17 +90,4 @@ if __name__ == '__main__':
     #     # print opf
     #     # string_list.append(opf)
     # print string_list
-
-
-
-
-
-
-
-
-
-
-
-
-	
 

@@ -115,10 +115,10 @@ if __name__ == "__main__":
     argvs = sys.argv
     argc = len(argvs)
     if argc != 3:
-        print '以下の書式で実行してください'
-        print 'python remove_sample.py [入力元のパス] [出力先のパス]'
+        print('以下の書式で実行してください')
+        print('python remove_sample.py [入力元のパス] [出力先のパス]')
         sys.exit()
     input_path = argvs[1]
     output_path = argvs[2]
     main(input_path, output_path)
-    print 'DONE!!'
+    print('DONE!!')
