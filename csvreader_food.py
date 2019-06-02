@@ -51,7 +51,7 @@ if __name__ == '__main__':
     shutil.rmtree(DIR)
     os.mkdir(DIR)#清空json文件夹
     del_file(DIR)
-    os.mkdir(DIR2)  # 清空txt文件夹
+    os.mkdir(DIR2) # 清空txt文件夹
     del_file(DIR2)
 
     for stu in csv_file:#每一行

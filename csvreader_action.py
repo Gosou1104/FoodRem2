@@ -58,7 +58,7 @@ def add_tag(txt_path,tag_t):
     #返回list
     return char_dic
 if __name__ == '__main__':
-    csv_file = csv.reader(open('/Users/gosou/Desktop/FoodRem/test.csv','r'))
+    csv_file = csv.reader(open('/Users/gosou/Desktop/FoodRem/test4ge.csv','r'))
     count=0
     counter =0
     string_list=[]
@@ -121,5 +121,3 @@ if __name__ == '__main__':
 
 
 
-
-    

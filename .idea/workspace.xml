@@ -2,21 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ad88bd2-ff82-48a0-a8b3-90fdd78eba99" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/remfood_real.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/remfood_real.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MeCab.py" beforeDir="false" afterPath="$PROJECT_DIR$/MeCab.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/csvreader_action.py" beforeDir="false" afterPath="$PROJECT_DIR$/csvreader_action.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/csvreader_food.py" beforeDir="false" afterPath="$PROJECT_DIR$/csvreader_food.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/finalizer_sample.py" beforeDir="false" afterPath="$PROJECT_DIR$/finalizer_sample.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foodCate.py" beforeDir="false" afterPath="$PROJECT_DIR$/foodCate.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jsonreader.py" beforeDir="false" afterPath="$PROJECT_DIR$/jsonreader.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/normalizer_sample.py" beforeDir="false" afterPath="$PROJECT_DIR$/normalizer_sample.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/preparation_for_ner_sample.py" beforeDir="false" afterPath="$PROJECT_DIR$/preparation_for_ner_sample.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/preparation_for_ner_sample_ori.py" beforeDir="false" afterPath="$PROJECT_DIR$/preparation_for_ner_sample_ori.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/remove_sample.py" beforeDir="false" afterPath="$PROJECT_DIR$/remove_sample.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/replace_sample_action.py" beforeDir="false" afterPath="$PROJECT_DIR$/replace_sample_action.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/replace_sample_food.py" beforeDir="false" afterPath="$PROJECT_DIR$/replace_sample_food.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,11 +15,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/csvreader_action.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="47">
-              <caret line="102" column="86" lean-forward="true" selection-start-line="102" selection-start-column="86" selection-end-line="102" selection-end-column="86" />
+            <state relative-caret-position="1429">
+              <caret line="123" selection-start-line="123" selection-end-line="123" />
               <folding>
                 <element signature="e#16#26#0" expanded="true" />
               </folding>
@@ -41,8 +30,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/csvreader_food.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1260">
-              <caret line="84" lean-forward="true" selection-start-line="84" selection-end-line="84" />
+            <state relative-caret-position="795">
+              <caret line="53" column="19" lean-forward="true" selection-start-line="53" selection-start-column="19" selection-end-line="53" selection-end-column="19" />
               <folding>
                 <element signature="e#16#26#0" expanded="true" />
               </folding>
@@ -53,8 +42,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/replace_sample_food.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="119" column="46" lean-forward="true" selection-start-line="119" selection-start-column="46" selection-end-line="119" selection-end-column="46" />
+            <state relative-caret-position="525">
+              <caret line="121" column="43" selection-start-line="121" selection-start-column="43" selection-end-line="121" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -68,23 +57,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/jsonreader.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="822">
-              <caret line="80" column="39" selection-start-line="80" selection-start-column="38" selection-end-line="80" selection-end-column="39" />
-              <folding>
-                <element signature="e#25#36#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/foodCate.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1395">
-              <caret line="93" selection-start-line="93" selection-end-line="93" />
+            <state relative-caret-position="121">
+              <caret line="154" selection-start-line="154" selection-end-line="154" />
               <folding>
                 <element signature="e#25#36#0" expanded="true" />
               </folding>
@@ -113,8 +90,9 @@
       <find>action_jsonFile</find>
       <find>w.write</find>
       <find>unicode_convert</find>
-      <find>STR</find>
+      <find>newline = ''</find>
       <find>np</find>
+      <find>STR</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -130,11 +108,11 @@
       <list>
         <option value="$PROJECT_DIR$/preparation_for_ner_sample_ori.py" />
         <option value="$PROJECT_DIR$/normalizer_sample.py" />
-        <option value="$PROJECT_DIR$/replace_sample_food.py" />
         <option value="$PROJECT_DIR$/replace_sample_action.py" />
+        <option value="$PROJECT_DIR$/replace_sample_food.py" />
+        <option value="$PROJECT_DIR$/foodCate.py" />
         <option value="$PROJECT_DIR$/csvreader_food.py" />
         <option value="$PROJECT_DIR$/csvreader_action.py" />
-        <option value="$PROJECT_DIR$/foodCate.py" />
         <option value="$PROJECT_DIR$/jsonreader.py" />
       </list>
     </option>
@@ -190,7 +168,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.foodCate">
+  <component name="RunManager" selected="Python.jsonreader">
     <configuration name="csvreader_action" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="remfood_real" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -283,9 +261,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.jsonreader" />
         <item itemvalue="Python.foodCate" />
         <item itemvalue="Python.csvreader_food" />
-        <item itemvalue="Python.jsonreader" />
       </list>
     </recent_temporary>
   </component>
@@ -321,7 +299,21 @@
       <option name="project" value="LOCAL" />
       <updated>1559396934497</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="new">
+      <created>1559451026302</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1559451026302</updated>
+    </task>
+    <task id="LOCAL-00005" summary="foodcate OK">
+      <created>1559467930757</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1559467930757</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -329,15 +321,15 @@
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" weight="0.23819591" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.23819591" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="GitHub Pull Requests" order="0" weight="0.32885906" />
-      <window_info anchor="bottom" id="Terminal" order="1" weight="0.29036143" />
+      <window_info anchor="bottom" id="Terminal" order="1" weight="0.28915662" />
       <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.5003524" side_tool="true" weight="0.32891566" />
       <window_info anchor="bottom" id="Python Console" order="3" weight="0.32771084" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" />
-      <window_info active="true" anchor="bottom" id="Run" order="6" sideWeight="0.49964765" visible="true" weight="0.32891566" />
+      <window_info active="true" anchor="bottom" id="Run" order="6" sideWeight="0.49964765" visible="true" weight="0.16506024" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32891566" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
@@ -349,7 +341,7 @@
     </layout>
     <layout-to-restore>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.23819591" />
+      <window_info content_ui="combo" id="Project" order="1" weight="0.23819591" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="GitHub Pull Requests" order="0" weight="0.32885906" />
       <window_info anchor="bottom" id="Terminal" order="1" weight="0.29036143" />
@@ -357,7 +349,7 @@
       <window_info anchor="bottom" id="Python Console" order="3" weight="0.32771084" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" />
-      <window_info active="true" anchor="bottom" id="Run" order="6" sideWeight="0.49964765" visible="true" weight="0.32891566" />
+      <window_info anchor="bottom" id="Run" order="6" sideWeight="0.49964765" visible="true" weight="0.16506024" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32891566" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
@@ -373,7 +365,20 @@
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
     <MESSAGE value="test" />
-    <option name="LAST_COMMIT_MESSAGE" value="test" />
+    <MESSAGE value="new" />
+    <MESSAGE value="foodcate OK" />
+    <option name="LAST_COMMIT_MESSAGE" value="foodcate OK" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/foodCate.py</url>
+          <line>74</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/normalizer_sample.py.bak">
@@ -392,27 +397,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/replace_sample_food.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="119" column="46" lean-forward="true" selection-start-line="119" selection-start-column="46" selection-end-line="119" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/_bootlocale.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="188">
           <caret line="33" selection-start-line="33" selection-end-line="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jsonreader.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="822">
-          <caret line="80" column="39" selection-start-line="80" selection-start-column="38" selection-end-line="80" selection-end-column="39" />
-          <folding>
-            <element signature="e#25#36#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -433,16 +421,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/foodCate.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1395">
-          <caret line="93" selection-start-line="93" selection-end-line="93" />
-          <folding>
-            <element signature="e#25#36#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/normalizer_sample.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
@@ -453,10 +431,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/replace_sample_food.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="121" column="43" selection-start-line="121" selection-start-column="43" selection-end-line="121" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/foodCate.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="e#25#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/csvreader_food.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1260">
-          <caret line="84" lean-forward="true" selection-start-line="84" selection-end-line="84" />
+        <state relative-caret-position="795">
+          <caret line="53" column="19" lean-forward="true" selection-start-line="53" selection-start-column="19" selection-end-line="53" selection-end-column="19" />
           <folding>
             <element signature="e#16#26#0" expanded="true" />
           </folding>
@@ -465,10 +467,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/csvreader_action.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="47">
-          <caret line="102" column="86" lean-forward="true" selection-start-line="102" selection-start-column="86" selection-end-line="102" selection-end-column="86" />
+        <state relative-caret-position="1429">
+          <caret line="123" selection-start-line="123" selection-end-line="123" />
           <folding>
             <element signature="e#16#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jsonreader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="154" selection-start-line="154" selection-end-line="154" />
+          <folding>
+            <element signature="e#25#36#0" expanded="true" />
           </folding>
         </state>
       </provider>
