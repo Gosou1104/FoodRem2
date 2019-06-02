@@ -39,16 +39,21 @@ def del_file(path):#删除文件
 
 if __name__ == '__main__':
 
-    csv_file = csv.reader(open('/Users/gosou/Desktop/FoodRem/test.csv','r'))
+    csv_file = csv.reader(open('/Users/gosou/Desktop/FoodRem/test4ge.csv','r'))
     count=0
     counter =0
     string_list=[]
     DIR="/Users/gosou/Desktop/FoodRem/food_jsonFile/"
+    DIR2="/Users/gosou/Desktop/FoodRem/food_txtFile/"
+
 
 
     shutil.rmtree(DIR)
     os.mkdir(DIR)#清空json文件夹
     del_file(DIR)
+    os.mkdir(DIR2)  # 清空txt文件夹
+    del_file(DIR2)
+
     for stu in csv_file:#每一行
         count+=1
         print (count)

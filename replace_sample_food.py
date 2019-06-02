@@ -118,12 +118,9 @@ def main(k, input_path, output_path, temp_path):
         fp.write(" ".join(output_list) + "\n")
     fp.close()
     jsObj = json.dumps(dic,ensure_ascii=False)
-
-
     DIR="/Users/gosou/Desktop/FoodRem/food_jsonFile/"
     conter = len([name for name in os.listdir(DIR) if os.path.isfile(os.path.join(DIR, name))])#查询有多少个文件
     jsonPath = "/Users/gosou/Desktop/FoodRem/food_jsonFile/rapide_"+str(conter)+".json"
-
 
     fileObject = open(jsonPath,'w')
 

@@ -7,20 +7,11 @@ import unicodedata
 import csv
 import codecs
 
-def unicode_convert(input):#c处理乱码问题
-    if isinstance(input, dict):
-        return {unicode_convert(key): unicode_convert(value) for key, value in list(input.items())}
-    elif isinstance(input, list):
-        return [unicode_convert(element) for element in input]
-    elif isinstance(input, str):
-        return input.encode('utf-8')
-    else:
-        return input
 
 DIR = "/Users/gosou/Desktop/FoodRem/food_jsonFile/"
 counterOfFile = len([name for name in os.listdir(DIR) if os.path.isfile(os.path.join(DIR, name))])#数有几个json
 
-fr=open("/Users/gosou/Desktop/FoodRem/new.csv",'r')
+fr=open("/Users/gosou/Desktop/FoodRem/test4ge.csv",'r')
 
 x=0
 
@@ -28,9 +19,10 @@ x=0
 
 
 temp_line_3=""
-#for line in open('/Users/gosou/Desktop/1/test1.csv'):
-
-for x in range(0,counterOfFile):
+list=[]
+if os.path.exists("/Users/gosou/Desktop/FoodRem/list.csv"):
+    os.remove("/Users/gosou/Desktop/FoodRem/list.csv")
+for x in range(0,counterOfFile):# 所有的json里面
 
 
     line = fr.readline()
@@ -44,7 +36,6 @@ for x in range(0,counterOfFile):
     w = open("/Users/gosou/Desktop/FoodRem/food_txtFile_final/final_result_"+str(x)+".txt","w")
 
     i=0
-    #tempe_line_3 =""
     for line1 in open("/Users/gosou/Desktop/FoodRem/food_txtFile/temp_output_9"+str(x)+".txt"):
 
         name_set =[]
@@ -57,32 +48,45 @@ for x in range(0,counterOfFile):
             for item_tt in temp_line_1t:
                 name_set.append(item_tt.split(",")[0])
         else:
-            
+
             name_set.append(temp_line_1.split(",")[0])#eg.大根 # 这个就是第一个
 
-        #temp_line_3 = temp_line_1.split(",")[i]
-       # if "=" in temp_line_3:
-        #    print temp_line_3
-         #   i+=1
-        for item_ttt in name_set: 
+        for item_ttt in name_set:
             if (one_line in new_load_dict):
 
 
                 csv_fifle = csv.reader(open("/Users/gosou/Desktop/FoodRem/food.csv","r"))
 
 
-                for item in csv_fifle:  # item的第三项
+                for item in csv_fifle:  # item的第三项 # 打开了foodcsv
                     if(item[3]==item_ttt):
+                        temp_line_3+=item[2]+" "
                         #w.write(one_line + ","+new_load_dict[one_line])
-                        #temp_line_3+=item[2]+" "
-                        #print "2"+item[2]   
-                        #print "3"+temp_line_3
-                        w.write(one_line + ","+new_load_dict[one_line])
-                        w.write(","+item[2]+"\n")#new information
-                    #print "oo"
+                        #w.write(temp_line_3)#new information #
+
+
                     else:
                         # print ("ERROR!!!")
-                        pass
+                       pass
+
+            #list.insert(x,temp_line_3)
+            #
+                #print(x)
+    w.write(temp_line_3)
+    #print(x)
+    #print(temp_line_3)
+    list.insert(x,temp_line_3+"\n")
+    #if os.path.exists("/Users/gosou/Desktop/FoodRem/list.csv"):
+    ff = open("/Users/gosou/Desktop/FoodRem/list.csv", "a+", newline='')
+    # else:
+    #     ff = open("/Users/gosou/Desktop/FoodRem/list.csv", "w+", newline='')
+    # csv_w = csv.writer(ff)
+    # csv_w.writerows(list[x])
+    ff.write(list[x])
+    #print(list[x])
+    temp_line_3 = ""
+
+
     #x+=1
     #fw.writerows(line+','+temp_line_3+"\n")
     #fw.close()
@@ -91,3 +95,15 @@ for x in range(0,counterOfFile):
 
 #fr.close()
     w.close()
+    ff.close()
+# import StringIO
+#
+# s = StringIO.StringIO(text)
+# with open('1.csv', 'w') as f:
+# for line in list:
+#    f.write(line)
+#csvfile = open('/Users/gosou/Desktop/FoodRem/1.csv', 'w', newline = '')
+#writer = csv.writer(csvfile)
+#writer.writerows(list)
+#csvfile.close()
+
