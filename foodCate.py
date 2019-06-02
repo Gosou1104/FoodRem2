@@ -20,8 +20,9 @@ x=0
 
 temp_line_3=""
 list=[]
-if os.path.exists("/Users/gosou/Desktop/FoodRem/list.csv"):
-    os.remove("/Users/gosou/Desktop/FoodRem/list.csv")
+listcsv_path = "/Users/gosou/Desktop/FoodRem/list.csv" # 在这改变输出csv的结果
+if os.path.exists(listcsv_path): # 把那个list删了
+    os.remove(listcsv_path)
 for x in range(0,counterOfFile):# 所有的json里面
 
 
@@ -77,7 +78,7 @@ for x in range(0,counterOfFile):# 所有的json里面
     #print(temp_line_3)
     list.insert(x,temp_line_3+"\n")
     #if os.path.exists("/Users/gosou/Desktop/FoodRem/list.csv"):
-    ff = open("/Users/gosou/Desktop/FoodRem/list.csv", "a+", newline='')
+    ff = open(listcsv_path, "a+", newline='')
     # else:
     #     ff = open("/Users/gosou/Desktop/FoodRem/list.csv", "w+", newline='')
     # csv_w = csv.writer(ff)

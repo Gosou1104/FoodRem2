@@ -99,10 +99,14 @@ def is_japanese(string): # 检测是否包含日语
     return False
 
 def action_short():
+    out_put_path ="/Users/gosou/Desktop/FoodRem/actionlist.csv"
+    if os.path.exists(out_put_path):  # 把那个list删了
+        os.remove(out_put_path)
     DIR = "/Users/gosou/Desktop/FoodRem/action_txtFile_final/"
     counterOfFile = len([name for name in os.listdir(DIR) if os.path.isfile(os.path.join(DIR, name))])  # 数有几个json
     for x in range(0,counterOfFile-1):
         wt = open("/Users/gosou/Desktop/FoodRem/action_txtFile_final/final_result_" + str(x) + ".txt", "r")# 按照顺序读取txt
+        ff = open("/Users/gosou/Desktop/FoodRem/actionlist.csv", "a+", newline='')
         lastone = ""#作为最后的结果
         content_action = wt.read()  # 读取全部的文档
         title_action = []
@@ -150,8 +154,10 @@ def action_short():
             #lastone = next(reversed(order_dt))# 按照从小到大排序输出最后一个key
         if is_japanese(lastone) == False:
             lastone ="他の調理法"
+        ff.write(lastone+"\n")
         print("last:"+lastone)
         wt.close()
+        ff.close()
 
 
 def shorter(list1):
